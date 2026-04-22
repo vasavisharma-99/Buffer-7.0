@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>📊 Dashboard</h2>
+<h2 style="text-align:center;">📊 Staff Dashboard</h2>
 
-<table border="1">
+<table border="1" style="margin:auto; width:80%; text-align:center;">
 <tr>
 <th>ID</th>
 <th>Name</th>
@@ -15,11 +15,11 @@
 {% for o in orders %}
 <tr>
 <td>{{ loop.index }}</td>
-<td>{{ o.name }}</td>
-<td>{{ o.items | join(', ') }}</td>
-<td>{{ o.status }}</td>
+<td>{{ o["name"] }}</td>
+<td>{{ o["items"] | join(', ') }}</td>
+<td>{{ o["status"] }}</td>
 <td>
-{% if o.status == "pending" %}
+{% if o["status"] == "pending" %}
 <a href="{{ url_for('complete_order', order_id=loop.index) }}">✔ Done</a>
 {% endif %}
 </td>
