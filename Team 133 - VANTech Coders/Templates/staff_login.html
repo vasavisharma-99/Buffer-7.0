@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>🔐 Staff Login</h2>
+<h2 class="title">🔐 Staff Login</h2>
 
-<form method="post">
-  <input type="text" name="username" placeholder="Username" class="input-box">
-  <input type="password" name="password" placeholder="Password" class="input-box">
-  <button class="btn">Login</button>
-</form>
+<div class="center-box">
+  <form method="post">
+    <input type="text" name="username" placeholder="Username" class="input-box">
+    <input type="password" name="password" placeholder="Password" class="input-box">
+    <button class="btn">Login</button>
+  </form>
+</div>
 
 {% endblock %}
