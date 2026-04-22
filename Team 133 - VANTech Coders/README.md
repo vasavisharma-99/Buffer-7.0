@@ -18,3 +18,6 @@ A Flask-based web application to manage canteen orders efficiently using Queue (
 - Python (Flask)
 - HTML, CSS
 - DSA: Queue, Dictionary, List
+
+## video link:
+https://drive.google.com/file/d/1zMSS7OkIcVsHXpHtwZ56ELHAZUOsNsif/view?usp=sharing
