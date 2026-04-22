@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>🎉 Order Confirmed!</h2>
+
+<div class="card" style="margin:auto; width:300px;">
+  <p>👤 {{ name }}</p>
+  <p>🧾 Token: <b>{{ token_number }}</b></p>
+  <p>⏳ Ahead: <b>{{ pending_ahead }}</b></p>
+</div>
+
+{% endblock %}

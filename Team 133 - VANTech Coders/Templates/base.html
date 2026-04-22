@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SuSwaad Canteen</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+  <h1>🌿 SuSwaad Canteen</h1>
+  <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('staff_login') }}">Staff</a>
+  </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

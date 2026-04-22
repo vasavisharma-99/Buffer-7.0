@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>🍽️ Our Menu</h2>
+
+<form action="{{ url_for('place_order') }}" method="post">
+
+  <input type="text" name="name" placeholder="Enter your name" required class="input-box">
+
+  <div class="menu-container">
+    {% for item in menu %}
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/' + item.image) }}">
+      <h3>{{ item.name }}</h3>
+      <p>₹{{ item.price }}</p>
+      <input type="checkbox" name="items" value="{{ item.name }}">
+    </div>
+    {% endfor %}
+  </div>
+
+  <button class="btn">Place Order 🚀</button>
+
+</form>
+
+{% endblock %}
